@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 22 Aula 7 – Tornando iframes mais seguros</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Capítulo 22 Aula 7 – Tornando iframes mais seguros</h1>
+    <p>Criar um código que carregue esse formulário</p>
+
+    <p>Posso bloquear as ações maliciosas, usando o sandbox="sandbox" no máximo, com isso eu crio uma proteção um pouco maior em relação a ataques, porque eu não estou capiturando mais nenhum tipo de informação</p>
+    <p>tambem posso adicionar isso com o valor padrão que não precisa colocar o nome dentro dos parênteses:
+        referrerpolicy="no-referer-when-downgrade"
+
+        ficar um pouco mais limitado: referrerpolicy="no-referrer"
+    </p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt hic deleniti. Similique molestiae eum autem voluptatum dolores tenetur nisi tempore, molestias odit accusantium deleniti exercitationem esse. Ullam, eligendi fuga.</p>
+
+    <iframe src="paginas-extras/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer-when-downgrade">
+        <p>Infelizmente seu navegador não é compatível com isso!</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nesciunt hic deleniti. Similique molestiae eum autem voluptatum dolores tenetur nisi tempore, molestias odit accusantium deleniti exercitationem esse. Ullam, eligendi fuga.</p>
+
+    <h2>Se eu quiser deixar com que ele execulte esse formulario</h2>
+    <p>se eu souber que esse site está no mesmo servidor que o meu.</p>
+
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer-when-downgrade">
+        <p>Infelizmente seu navegador não é compatível com isso!</p>
+    </iframe>
+</body>
+</html>
