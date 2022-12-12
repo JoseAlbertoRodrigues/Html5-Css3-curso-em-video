@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+    background-color: cornflowerblue;
+    background-attachment: fixed; /* background fixo */
+    position: relative;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: rgb(138, 43, 226);
+    overflow: hidden;
+}
+
+li {
+    display: flex;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    /* text-align: center; */
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    /* color: #f39209; */
+    color: #4d3515;
+}
+
+/* Section Home */
+section.home {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* margin: auto;  fica centralizado*/
+    background-color: #F5B756;
+    /* position: absolute; */
+}
+section.home-color {
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    background-color: white;
+}
+
+/* Section News */
+.news {
+    background-color: #A87119;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* position: absolute; */
+}
+
+/* Section contact */
+.contact {
+    background-color: #56ACF5;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* position: absolute; */
+}
+
+/* Section About */
+.about {
+    background-color: #2A6EA8;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* position: absolute; */
+}

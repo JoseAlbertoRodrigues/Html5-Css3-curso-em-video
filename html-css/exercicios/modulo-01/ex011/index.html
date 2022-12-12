@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <p>Módulo 11 do livro - Capítulo 11</p>
+
+
+    <picture>
+        <!-- A FOTO PEQUENA TEM QUE ESTÁ ACIMA DA FOTO-M.PNG... -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a Reproduzir Áudios em HTML5</p>
+    <!-- Maneira mais simples de reproduzir o áudio -->
+    <audio src="midia/(I've Got A) Baby Sister - Reed Mathis.mp3" controls autoplay></audio>
+    <!-- Para poder ter compatibilidade com outros navegadores posso adicionar outros formatos MP3 WAV OGG -->
+    <audio preload="metadata" autoplay>
+        <source src="midia/(I've Got A) Baby Sister - Reed Mathis.mp3" type="audio/mpeg">
+        <source src="midia/(I've Got A) Baby Sister - Reed Mathis.ogg" type="audio/ogg">    
+        <source src="midia/(I've Got A) Baby Sister - Reed Mathis.wav" type="audio/wav"> 
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/(I've Got A) Baby Sister - Reed Mathis.mp3">Clique aqui para baixar o arquivo MP3</a></p>   
+    </audio>
+
+
+    <!-- Melhor de trabalhar no SOURCE com o MAX-WIDTH... ou seja largura máximo.. 
+        Quando eu carregar o site a imagem grande vai aparecer, mais se o tamanho onde esta definido na tag source chegar a menos de 1050px, então será carregado a imagem (foto-m.png) pois foi definido no parâmetro srcset, que carregasse a imagem média... 
+    A foto maior que eu tenho é 1000px, para não ocorrer a barra de rolagem eu tenho que deixar uma folga de alguns pixels a mais, aqui ficou 1050, ou iremos testar até ver que não tem a barra de rolagem.  -->
+</body>
+</html>

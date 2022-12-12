@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #313131;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+    color: white;
+}
+
+.centro {
+    text-align: center;
+}
+
+.centro ul {
+    list-style-type: none;
+}
+
+.centro li {
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            height: 600px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: middle; /* Alinhamento vertical (top, bottom, middle)*/
+        }
+        tr:nth-child(even), td:nth-child(even) { /*PAR*/
+            background-color: darkgreen;
+        }
+
+        tr:nth-child(odd) { /*ÍMPAR*/
+            background-color: purple;
+        }
+
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela (table)
+            TABLE ROW = linha de tabela (tr)
+                TABLE HEADER = cabeçalho de tabela (th)
+                TABLE DATA = dado de tabela (td)
+
+    -->
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+            <td>E1</td>
+        </tr>
+        <tr> <!-- Segunda linha -->
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+            <td>D2</td>
+            <td>E2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+            <td>D3</td>
+            <td>E3</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td>D4</td>
+            <td>E4</td>
+        </tr>
+        <tr> <!-- Quinta linha -->
+            <td>A5</td>
+            <td>B5</td>
+            <td>C5</td>
+            <td>D5</td>
+            <td>E5</td>
+        </tr>
+        <tr> <!-- Sexta linha -->
+            <td>A6</td>
+            <td>B6</td>
+            <td>C6</td>
+            <td>D6</td>
+            <td>E6</td>
+        </tr>
+    </table>
+</body>
+</html>
