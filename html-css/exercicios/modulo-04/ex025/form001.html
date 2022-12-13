@@ -8,12 +8,26 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form>
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <!-- autocomplete="off" dentro do form serve para desligar ou ligar o auto complemento do formulário -->
+    <form action="cadastro.php">
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
 
     <p>Dessa maneira vai funcionar, mas não quer dizer que está 100% bom</p>
+
+    <p>Para a linguagem php funcionar direito com o formulário, eu preciso que os inputs tenham o name="...".
+        O submit não tem tanta precisão porque ele é um botão de envio.
+        Para o JavaScript o ID é mais importante.
+    <p>
+        pode usar o mesmo nome para name="" e o id="", mas só para poder diferenciar vai ficar diferente.
+        no for="inome" usamos o id.
+        Éssa utilidade é mais pratico usando no celular.
+    </p>
 </body>
 </html>
