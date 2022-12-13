@@ -9,7 +9,7 @@
 <body>
     <h1>Meu primeiro formulário</h1>
     <!-- autocomplete="off" dentro do form serve para desligar ou ligar o auto complemento do formulário -->
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="POST">
         <p><label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome">
         </p>
@@ -28,6 +28,12 @@
         pode usar o mesmo nome para name="" e o id="", mas só para poder diferenciar vai ficar diferente.
         no for="inome" usamos o id.
         Éssa utilidade é mais pratico usando no celular.
+    </p>
+
+    <p>Praticamente posso usar o método GET quando não estou pedindo os dados do usuário,
+        senha, dados pessoais.
+        Quando envio dados por GET, SÓ posso enviar até 3000 bytes. É praticamente 3000 letras.
+        Se for mais de 3000 bytes uso o POST, ou se for arquivos.
     </p>
 </body>
 </html>
