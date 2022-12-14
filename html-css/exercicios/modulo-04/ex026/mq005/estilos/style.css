@@ -22,17 +22,20 @@ header > h1 {
 
 i#burger {
     background-color: rgb(255, 165, 41);
+    border: 2px solid rgb(6, 33, 53);
     color: rgb(6, 33, 53);
     display: block;
     padding: 10px;
     text-align: center;
     cursor: pointer;
+    transition: 1s all;
 }
 
 i#burger:hover {
     background-color: rgb(6, 33, 53);
     color: rgb(255, 165, 41);
     border: 2px solid rgb(255, 165, 41);
+    transition: 1s all;
 }
 
 menu {
